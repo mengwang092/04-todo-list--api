@@ -1,0 +1,32 @@
+
+@API_URL = https://milkmidi-api-example-server.herokuapp.com/api/todolist/milkmidi
+
+### GET Todolist
+GET {{API_URL}} HTTP/1.1
+content-type: application/json
+
+
+### POST Todolist
+POST {{API_URL}} HTTP/1.1
+content-type: application/json
+
+{
+  "text": "hi, React"
+}
+
+
+### Toggle Todo
+PUT {{API_URL}} HTTP/1.1
+content-type: application/json
+
+{
+  "id": "3b517ce2-5295-11e9-8647-d663bd873d93"
+}
+
+### Delete Todo
+DELETE {{API_URL}} HTTP/1.1
+content-type: application/json
+
+{
+  "id": "3b517ce2-5295-11e9-8647-d663bd873d93"
+}
